@@ -21,6 +21,34 @@ while k >= 0:
 
 print(result)
 
+
+def intresult(i, o):
+
+    result = 0
+
+    if i > 1:
+        if o:
+            k = int(math.log(o) / math.log(i))
+        else:
+            k = 0
+    else:
+        k = 1
+
+    while k >= 0:
+        result = result * 10
+        result = result + (o // i**k)
+        o = o - (o // i**k) * (i**k)
+        k = k - 1
+
+    return result
+
+b = int(input())
+c = int(input())
+
+a = intresult(b, c)
+
+print(a)
+
 """
 
 result = 0
