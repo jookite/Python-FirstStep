@@ -20,3 +20,15 @@ while k >= 0:
     k = k - 1
 
 print(result)
+
+"""
+
+result = 0
+
+while k >= 0:
+    result = result * 10
+    result = result + (n // j**k)
+    n = n - (n // j**k) * (j**k)
+    k = k - 1 
+
+"""
