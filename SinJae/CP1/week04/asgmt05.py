@@ -10,7 +10,6 @@ if j > 1:
     if n:
         k = int(math.log(n) / math.log(j))
     else:
-       k = 0
         k = 0
 else:
     k = 1
