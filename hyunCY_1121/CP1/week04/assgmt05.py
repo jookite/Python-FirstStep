@@ -1,14 +1,14 @@
 n = int(input())
 d = int(input())
 
-result = ''
+result = []
 
-if d == 0:
-    result = '0'
+if d == 0 :
+    result.append(0)
 
-while d > 0:
-    result = str(d % n) + result
+while d > 0 :
+    result.append(d % n)
     d //= n
 
-
-print(result)
+for i in range(len(result) - 1, -1, -1) :
+    print(result[i], end="")
