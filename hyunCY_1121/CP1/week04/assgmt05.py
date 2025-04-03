@@ -1,6 +1,5 @@
 n = int(input())
 d = int(input())
-
 result = []
 
 if d == 0 :
