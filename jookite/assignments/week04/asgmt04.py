@@ -7,9 +7,9 @@ if n == 0:
 
 while n!=0:
     if n%2 == 0:
-        result = "0"+result
+        result = "0" + result
     else:
-        result = "1"+result
+        result = "1" + result
     n >>= 1
 
 print(result)
